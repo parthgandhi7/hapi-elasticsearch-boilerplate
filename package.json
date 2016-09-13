@@ -1,0 +1,25 @@
+{
+  "name": "hapi-project",
+  "version": "1.0.0",
+  "description": "mock hapi project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.1",
+    "bcryptjs": "^2.3.0",
+    "elasticsearch": "^11.0.1",
+    "hapi": "^15.0.3",
+    "inert": "^4.0.2",
+    "jade": "^1.11.0",
+    "jsonwebtoken": "^7.1.9",
+    "mongoose": "^4.6.0",
+    "q": "^1.4.1",
+    "requirefrom": "^0.2.0",
+    "vision": "^4.1.0"
+  }
+}

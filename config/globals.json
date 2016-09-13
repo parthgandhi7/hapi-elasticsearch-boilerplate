@@ -1,0 +1,48 @@
+{
+  "JWT_SECRET": "yoursecretgoeshere",
+  "elasticsearchindices": [{
+    "name": "mainindex",
+    "body": {
+      "mappings": {
+        "book": {
+          "properties": {
+            "title": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        },
+        "customer": {
+          "properties": {
+            "name": {
+              "type": "string",
+              "index": "not_analyzed"
+            }
+          }
+        }
+      }
+    }
+  }, {
+    "name": "bank",
+    "body": {
+      "mappings": {
+        "account": {
+          "properties": {
+            "number": {
+              "type": "long",
+              "index": "not_analyzed"
+            },
+            "account_holder_name": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "branch_code": {
+              "type": "long",
+              "index": "not_analyzed"
+            }
+          }
+        }
+      }
+    }
+  }]
+}
